@@ -71,6 +71,10 @@ body {
   color: #6070ff;
 }
 
+#myLogo a:link {
+  text-decoration: none;
+}
+
 #navbar {
   background: center no-repeat url(../icons/menu.svg);
   background-size: 50%;
