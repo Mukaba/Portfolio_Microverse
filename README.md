@@ -55,7 +55,7 @@
 
 [Figma Link](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=0%3A1&t=teTWva4DHx9UzJUX-0)
 
-[Live Demo Link](https://Mukaba/Portfolio_Microverse/)
+*Live Demo Link* `Not available`
 <!-- [Project requirements Link](Not yet available) -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,6 +126,6 @@ I'd like to thank my coding partners to support me when I got stuck and my code 
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](https://github.com/Mukaba/Portfolio_Microverse/blob/main/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
