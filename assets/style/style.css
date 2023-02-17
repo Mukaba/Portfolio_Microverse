@@ -391,7 +391,8 @@ body {
   color: #6070ff;
 }
 
-.see__project, .get__resume {
+.see__project,
+.get__resume {
   width: fit-content;
   border: 1px solid #6070ff;
   border-radius: 8px;
@@ -406,10 +407,11 @@ body {
 }
 
 /* about__mySelf section */
-.flex-col{
+.flex-col {
   display: flex;
   flex-direction: column;
 }
+
 .about__mySelf {
   padding: 10px;
   display: flex;
@@ -419,39 +421,45 @@ body {
   background-color: white;
   border-top-right-radius: 5rem;
 }
+
 .about__div1,
 .about__div2 {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 12px
+  gap: 12px;
 }
+
 .mySelf__title {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   display: flex;
   align-items: center;
-  color: #172B4D;
+  color: #172b4d;
 }
+
 .about__paragraph {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
 }
+
 .languages_title {
   display: flex;
   height: fit-content;
   justify-content: space-between;
   padding: 10px;
 }
+
 .languages_title p {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: black;
 }
+
 .lang__dropdown,
 .go__drop {
   background-size: contain;
@@ -459,33 +467,40 @@ body {
   width: 20px;
   align-self: center;
 }
+
 .lang__dropdown {
   background: center no-repeat url(../icons/dopdown_arrow.svg);
 }
+
 .go__drop {
   background: center no-repeat url(../icons/go_drop.svg);
 }
+
 .languages__pinned {
   flex-direction: column;
   padding: 12px;
   gap: 12px;
 }
+
 .language__icon {
   width: 48px;
   height: 48px;
   border-radius: 50%;
 }
+
 .language__view {
   gap: 16px;
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
 }
+
 .js_icon {
   background: center no-repeat url(../icons/js_icon.svg);
 }
+
 .html_icon {
   background: center no-repeat url(../icons/html_icon.svg);
 }
+
 .css_icon {
   background: center no-repeat url(../icons/css_icon.svg);
 }
-
