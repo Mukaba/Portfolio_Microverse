@@ -479,6 +479,7 @@ body {
   flex-direction: column;
   padding: 12px;
   gap: 12px;
+  list-style: none;
 }
 
 .language__icon {
