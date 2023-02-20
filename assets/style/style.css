@@ -377,13 +377,14 @@ body {
 }
 
 .project__languages {
-  display: flex;
+  /* display: flex; */
   list-style: none;
   gap: 8px;
   width: fit-content;
 }
 
 .project__languages li {
+  float: left;
   padding: 4px 12px;
   background: #ebebff;
   border-radius: 8px;
