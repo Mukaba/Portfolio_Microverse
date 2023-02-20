@@ -385,6 +385,7 @@ body {
 
 .project__languages li {
   float: left;
+  margin-right: 6px;
   padding: 4px 12px;
   background: #ebebff;
   border-radius: 8px;
