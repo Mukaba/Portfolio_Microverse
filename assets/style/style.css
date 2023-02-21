@@ -14,6 +14,11 @@ html {
   src: url(../fonts/Poppins/Poppins-Medium.ttf);
 }
 
+@font-face {
+  font-family: Poppins-thin;
+  src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+
 body {
   margin-top: 48.34px;
   font-family: Poppins, serif;
@@ -503,4 +508,66 @@ body {
 
 .css_icon {
   background: center no-repeat url(../icons/css_icon.svg);
+}
+.contact_form {
+  background-color: #6070ff;
+  padding: 80px 20px 40px 20px;
+  border-top-left-radius: 5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+.contact__title, .contact__paragraph {
+  width: fit-content;
+  align-self: center;
+}
+.contact__title {
+  font-size: 40px;
+  font-weight: 700;
+}
+.contact__paragraph {
+  font-family: Poppins-thin;
+  text-align: center;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: lighter;
+}
+.form__list__ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form__list__ul li {
+  display: flex;
+  flex-direction: column;
+}
+.input__li {
+  flex-grow: 1;
+}
+.submit__form {
+  width: fit-content;
+  padding: 10px;
+  color:  #6070FF;
+}
+.input__name, .input__mail {
+  padding: 5px;
+  height: 48px;
+}
+.input__name, .input__mail, .input__message, .submit__form{
+  border-radius: 8px;
+  outline: none;
+  border: unset;
+}
+.input__message {
+  height: 8rem;
+  padding: 10px;
 }
