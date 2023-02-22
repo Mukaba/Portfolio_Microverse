@@ -84,6 +84,10 @@ body {
   width: 38px;
 }
 
+#nav__list {
+  display: none;
+}
+
 #aboutMeSection {
   height: 40rem;
   margin-bottom: 5rem;
@@ -587,4 +591,30 @@ body {
 .input__message {
   height: 8rem;
   padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  * {
+    border: 1px solid grey;
+    text-decoration: none;
+    }
+
+  #nav__list {
+    list-style: none;
+    display: flex;
+    align-self: center;
+    gap: 5rem;
+  }
+  #navbar {
+    display: flex;
+    background: unset;
+    width: fit-content;
+    margin-right: 5rem;
+  }
+  .nav__li a {
+    color: #344563;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
