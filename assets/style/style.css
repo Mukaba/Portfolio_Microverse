@@ -53,12 +53,8 @@ body {
   flex-wrap: wrap;
 }
 
-#header,
-.eclips__dots {
-  background-color: white;
-}
-
 #header {
+  background-color: white;
   z-index: 1;
   position: fixed;
   height: 48px;
@@ -258,6 +254,7 @@ body {
   display: flex;
   align-items: center;
   color: #172b4d;
+  width: 15rem;
 }
 
 .about__more {
@@ -595,9 +592,8 @@ body {
 
 @media only screen and (min-width: 768px) {
   * {
-    border: 1px solid grey;
     text-decoration: none;
-    }
+  }
 
   #nav__list {
     list-style: none;
@@ -605,16 +601,120 @@ body {
     align-self: center;
     gap: 5rem;
   }
+
   #navbar {
     display: flex;
     background: unset;
     width: fit-content;
     margin-right: 5rem;
   }
+
   .nav__li a {
     color: #344563;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
+  }
+
+  .about__me {
+    width: 60%;
+  }
+
+  .about__title {
+    width: fit-content;
+  }
+
+  .eclips__dots {
+    height: 91.5vh;
+    background-color: white;
+  }
+
+  #aboutMeSection {
+    height: 91.5vh;
+  }
+
+  .rectange__4 {
+    right: 7.6rem;
+    width: 155px;
+    height: 30px;
+  }
+
+  .eclips__3 {
+    right: 4.5rem;
+    height: 160px;
+    width: 160px;
+  }
+
+  .eclips__11 {
+    height: 70px;
+    width: 88px;
+    top: 4rem;
+    left: 3rem;
+  }
+
+  .rectangle__6 {
+    width: 61.99px;
+    height: 13.3px;
+    left: 1rem;
+    top: 3.6rem;
+  }
+
+  .eclips__8 {
+    width: 25px;
+    height: 25px;
+    left: 50rem;
+    top: 2rem;
+  }
+
+  .rectangle__7 {
+    width: 26.46px;
+    height: 4.73px;
+    left: 40rem;
+    top: 5rem;
+    transform: rotate(-10deg);
+  }
+
+  .eclips__5 {
+    width: 11px;
+    height: 11px;
+    left: 40.4rem;
+    top: 5.3rem;
+    border-radius: 50%;
+  }
+
+  .eclips__4 {
+    width: 30px;
+    height: 30px;
+    bottom: 2rem;
+  }
+
+  .rectangle__5 {
+    width: 80px;
+    height: 14px;
+    right: 40.5%;
+    bottom: 1.9rem;
+  }
+
+  .eclips__13 {
+    width: 33px;
+    height: 33px;
+    right: unset;
+    left: 18rem;
+    bottom: 2.82rem;
+  }
+
+  .eclips__12 {
+    width: 29.14px;
+    height: 17.07px;
+    right: unset;
+    left: 19rem;
+  }
+
+  .eclips__15 {
+    width: 35px;
+    height: 35px;
+    left: unset;
+    right: 15rem;
+    bottom: 10rem;
   }
 }
