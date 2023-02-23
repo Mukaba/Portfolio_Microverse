@@ -101,13 +101,14 @@ body {
   overflow: hidden;
   border-bottom-left-radius: 5rem;
 }
+
 .eclips__dots2 {
   display: none;
   position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .eclips__4 {
@@ -808,7 +809,8 @@ body {
     flex-basis: 40%;
   }
 
-  .about__paragraph, .contact__paragraph {
+  .about__paragraph,
+  .contact__paragraph {
     font-family: Poppins-thin, serif;
   }
 
@@ -848,37 +850,45 @@ body {
     right: 0;
     bottom: 0;
   }
+
   .contact_form {
     overflow: hidden;
     position: relative;
     gap: 15px;
   }
+
   .contact__form {
     width: 60%;
     align-self: center;
   }
+
   .contact_form form {
     width: 50%;
     align-self: center;
   }
+
   .input__li {
     border-radius: unset;
   }
+
   .form__list__ul {
     gap: 24px;
   }
+
   .submit__form {
     margin: auto;
   }
+
   .rectange__b4 {
     position: absolute;
-  top: 1.4rem;
-  right: 4.3rem;
-  width: 80px;
-  height: 15px;
-  background-color: #7F8CFF;
-  transform: rotate(-30deg);
+    top: 1.4rem;
+    right: 4.3rem;
+    width: 80px;
+    height: 15px;
+    background-color: #7f8cff;
+    transform: rotate(-30deg);
   }
+
   .eclips__b3 {
     position: absolute;
     width: 80px;
@@ -888,6 +898,7 @@ body {
     background: center no-repeat url(../icons/Ellipse3.svg);
     background-size: contain;
   }
+
   .eclips__b8 {
     width: 45px;
     height: 45px;
@@ -895,10 +906,11 @@ body {
     right: 10rem;
     top: 23rem;
     border: unset;
-    background-color: #7F8CFF;
+    background-color: #7f8cff;
   }
+
   .rectangle__b6,
   .eclips__b5 {
-    background-color: #7F8CFF;
+    background-color: #7f8cff;
   }
 }
