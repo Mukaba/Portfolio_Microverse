@@ -583,12 +583,6 @@ body {
   flex-grow: 1;
 }
 
-.submit__form {
-  width: fit-content;
-  padding: 10px;
-  color: #6070ff;
-}
-
 .input__name,
 .input__mail {
   padding: 5px;
@@ -772,6 +766,10 @@ body {
     order: 2;
   }
 
+  .submit__form {
+    margin: auto;
+  }
+
   .see__project:hover,
   .get__resume:hover,
   .submit__form:hover {
@@ -873,10 +871,6 @@ body {
 
   .form__list__ul {
     gap: 24px;
-  }
-
-  .submit__form {
-    margin: auto;
   }
 
   .rectange__b4 {
