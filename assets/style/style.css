@@ -841,6 +841,8 @@ body {
 
   .about__links__icons li {
     cursor: pointer;
+    transform: scale(1);
+    transition: 0.2s ease-in;
   }
 
   /* ---contact form section---- */
@@ -918,10 +920,6 @@ body {
     transition: 10s ease-in-out;
   }
 
-  .about__links__icons li {
-    transform: scale(1);
-    transition: 0.2s ease-in;
-  }
   .about__links__icons li:hover {
     transform: scale(1.5);
     transition: 0.2s ease-out;
@@ -940,5 +938,4 @@ body {
     color: #6070fe;
     font-weight: 500;
   }
-
 }
