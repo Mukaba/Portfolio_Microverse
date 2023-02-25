@@ -350,7 +350,7 @@ body {
 .multi2__header,
 .tonic3__header {
   height: 220px;
-  background-size: cover !important;
+  background-size: cover;
   border-radius: 8px;
 }
 
@@ -841,6 +841,8 @@ body {
 
   .about__links__icons li {
     cursor: pointer;
+    transform: scale(1);
+    transition: 0.2s ease-in;
   }
 
   /* ---contact form section---- */
@@ -909,5 +911,31 @@ body {
   .rectangle__b6,
   .eclips__b5 {
     background-color: #7f8cff;
+  }
+
+  /* Transitions and Animations  */
+
+  #myLogo {
+    rotate: y 360deg;
+    transition: 10s ease-in-out;
+  }
+
+  .about__links__icons li:hover {
+    transform: scale(1.5);
+    transition: 0.2s ease-out;
+  }
+
+  [class*="__header"]:hover {
+    transition: 2s ease-in-out;
+    background-size: 120% !important;
+  }
+
+  .nav__li:hover {
+    transition: 1s ease-in-out;
+  }
+
+  .nav__li:hover a {
+    color: #6070fe;
+    font-weight: 500;
   }
 }
