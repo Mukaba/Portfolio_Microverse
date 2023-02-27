@@ -37,13 +37,13 @@
 
 
 - **[Present myself as a software developer]**
-<!-- - **[My Skills]** -->
+- **[Contact form]**
+- **[Introducing myself as a software developer]**
+- **[My Skills]**
 - **[My contact]**
-<!-- - **[My past projects]**
+- **[My past projects]**
 - **[Responsiveness ]**
 - **[Desktop and Mobile version]**
-- **[Interactive hamburger menu]**
-- **[Modal pop up on clicking to see project]** -->
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -86,14 +86,7 @@ To get a local copy of this project and running, follow these steps.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
-- **[Introducing myself as a software developer]**
-- **[My Skills]**
-- **[My contact]**
-- **[My past projects]**
-- **[Responsiveness ]**
-- **[Desktop and Mobile version]**
-
+- **[Add interractions]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
