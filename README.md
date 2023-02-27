@@ -53,7 +53,7 @@
 
 [Figma Link](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=0%3A1&t=teTWva4DHx9UzJUX-0)
 
-*Live Demo Link* `Not available`
+[Live Demo Link](https://mukaba.github.io/Portfolio_Microverse/)
 <!-- [Project requirements Link](Not yet available) -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,8 +87,12 @@ To get a local copy of this project and running, follow these steps.
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Add header ]**
-- [ ] **[Add icon's profile links]**
+- **[Introducing myself as a software developer]**
+- **[My Skills]**
+- **[My contact]**
+- **[My past projects]**
+- **[Responsiveness ]**
+- **[Desktop and Mobile version]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
