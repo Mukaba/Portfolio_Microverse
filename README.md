@@ -1,7 +1,7 @@
 # Portfolio_Microverse
 <!-- TABLE OF CONTENTS -->
 
-# 📗 Table of Contents
+## 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
@@ -21,20 +21,19 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio_Microverse] <a name="about-project"></a>
+## 📖 [Portfolio_Microverse] <a name="about-project"></a>
 
 
 **[Portfolio_Microverse]** Is a responsive website project that describe my achievements.
 
 
-## 🛠 Built With <a name="built-with"></a>
+### 🛠 Built With <a name="built-with"></a>
 
-## Html
-## Css
+#### Html
+#### Css
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
 
 - **[Present myself as a software developer]**
 - **[Contact form]**
