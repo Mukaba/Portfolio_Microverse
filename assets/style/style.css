@@ -922,7 +922,7 @@ body {
     transition: 0.2s ease-out;
   }
 
-  .header__container div:hover  {
+  .header__container div:hover {
     transition: 1s ease-out;
     transform: scale(1.5);
   }
