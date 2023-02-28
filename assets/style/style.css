@@ -62,7 +62,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  padding: 0 70px 0 70px;
+  padding: 0 10px;
 }
 
 #myLogo {
@@ -344,29 +344,34 @@ body {
   gap: 15px;
 }
 
-.tonic__header,
-.multi__header,
-.tonic2__header,
-.multi2__header,
-.tonic3__header {
-  height: 220px;
-  background-size: cover;
+.header__container {
+  height: 100%;
+  width: 100%;
   border-radius: 8px;
+  overflow: hidden;
 }
 
-.tonic__header {
+.header__container div {
+  height: 100%;
+  width: 100%;
+  background-size: cover !important;
+  border-radius: 8px;
+  transition: 1s ease-in;
+}
+
+.tonic__header div {
   background: no-repeat center url(../img/card_tonic.svg);
 }
 
-.tonic2__header {
+.tonic2__header div {
   background: no-repeat center url(../img/card_tonic2.svg);
 }
 
-.multi__header {
+.multi__header div {
   background: no-repeat center url(../img/card_multi.svg);
 }
 
-.multi2__header {
+.multi2__header div {
   background: no-repeat center url(../img/card_multi2.svg);
 }
 
@@ -614,6 +619,10 @@ body {
     text-decoration: none;
   }
 
+  #header {
+    padding: 0 70px 0 70px;
+  }
+
   #nav__list {
     list-style: none;
     display: flex;
@@ -751,18 +760,6 @@ body {
   .works > .works__item:hover {
     filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
     transition: 300ms ease-in-out;
-  }
-
-  .tonic__header,
-  .multi__header,
-  .tonic2__header,
-  .multi2__header,
-  .tonic3__header {
-    align-self: center;
-    height: 100%;
-    width: 60%;
-    background-size: cover !important;
-    border-radius: 8px;
   }
 
   .order__last {
@@ -925,9 +922,9 @@ body {
     transition: 0.2s ease-out;
   }
 
-  [class*="__header"]:hover {
-    transition: 2s ease-in-out;
-    background-size: 120% !important;
+  .header__container div:hover  {
+    transition: 1s ease-out;
+    transform: scale(1.5);
   }
 
   .nav__li:hover {
