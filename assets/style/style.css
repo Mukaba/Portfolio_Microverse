@@ -93,6 +93,7 @@ body {
   padding-top: 6rem;
   border-bottom-left-radius: 5rem;
 }
+
 #humberger {
   position: fixed;
   top: 0;
@@ -104,12 +105,13 @@ body {
   mix-blend-mode: multiply;
   padding: 2rem;
   gap: 3rem;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   opacity: 0;
 }
+
 #humberger.active {
   right: 0;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   opacity: 1;
 }
 
@@ -124,10 +126,12 @@ body {
   height: 100%;
   object-fit: contain;
 }
+
 #humbergerList {
   list-style: none;
   gap: 2rem;
 }
+
 .hidden {
   visibility: hidden;
 }
@@ -136,7 +140,6 @@ body {
   font-size: 2rem;
   color: white;
 }
-
 
 .eclips__dots {
   position: absolute;
