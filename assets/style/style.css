@@ -300,7 +300,8 @@ body {
 
 .about__me {
   width: 100%;
-  height: fit-content;
+
+  /* height: fit-content; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -527,7 +528,8 @@ body {
 
 .languages_title {
   display: flex;
-  height: fit-content;
+
+  /* height: fit-content; */
   justify-content: space-between;
   padding: 10px;
 }
