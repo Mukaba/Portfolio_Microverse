@@ -29,6 +29,7 @@ body {
 
 .flex {
   display: flex;
+  align-items: center;
 }
 
 .justify-between {
@@ -98,7 +99,7 @@ body {
   bottom: 0;
   width: 100%;
   right: -100%;
-  background: hsla(234, 100%, 69%, 0.96);
+  background: hsla(234, 100%, 59%, 0.8);
   backdrop-filter: blur(103rem);
   mix-blend-mode: multiply;
   padding: 2rem;
