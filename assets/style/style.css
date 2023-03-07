@@ -420,28 +420,12 @@ body {
   overflow: hidden;
 }
 
-.header__container div {
+.header__container img {
   height: 100%;
   width: 100%;
-  background-size: cover !important;
+  object-fit: cover;
   border-radius: 8px;
   transition: 1s ease-in;
-}
-
-.tonic__header div {
-  background: no-repeat center url(../img/card_tonic.svg);
-}
-
-.tonic2__header div {
-  background: no-repeat center url(../img/card_tonic2.svg);
-}
-
-.multi__header div {
-  background: no-repeat center url(../img/card_multi.svg);
-}
-
-.multi2__header div {
-  background: no-repeat center url(../img/card_multi2.svg);
 }
 
 .project__title {
@@ -992,7 +976,7 @@ body {
     transition: 0.2s ease-out;
   }
 
-  .header__container div:hover {
+  .header__container img:hover {
     transition: 1s ease-out;
     transform: scale(1.5);
   }
