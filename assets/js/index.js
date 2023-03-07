@@ -3,10 +3,10 @@ function menu() {
   humberger.classList.add('active');
 }
 function closemenu() {
+  const humberger = document.getElementById('humberger');
   humberger.classList.remove('active');
 }
 
-const humberger = document.getElementById('humberger');
 document.getElementById('navbar').onclick = () => {
   menu();
   closemenu();
