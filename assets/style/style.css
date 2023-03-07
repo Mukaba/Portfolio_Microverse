@@ -5,6 +5,7 @@
   font-family: inherit;
   resize: none;
   text-decoration: none;
+  border: 1px solid grey;
 }
 
 html {
@@ -100,8 +101,8 @@ body {
   bottom: 0;
   width: 100%;
   right: -100%;
-  background: hsla(234, 100%, 59%, 0.8);
-  backdrop-filter: blur(103rem);
+  background: hsla(234, 100%, 69%, 0.858);
+  backdrop-filter: blur(100rem);
   mix-blend-mode: multiply;
   padding: 2rem;
   gap: 3rem;
@@ -130,6 +131,8 @@ body {
 #humbergerList {
   list-style: none;
   gap: 2rem;
+  align-self: start;
+  align-items: start;
 }
 
 .hidden {
