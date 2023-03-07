@@ -101,8 +101,9 @@ body {
   bottom: 0;
   width: 100%;
   right: -100%;
-  background: hsla(234, 100%, 69%, 0.858);
-  backdrop-filter: blur(100rem);
+  background: hsla(234, 100%, 69%, 90%);
+  backdrop-filter: blur(100em);
+  -webkit-backdrop-filter: blur(100em);
   mix-blend-mode: multiply;
   padding: 2rem;
   gap: 3rem;
