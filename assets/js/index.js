@@ -80,5 +80,5 @@ cardArray.map((card) => {
       </div>
     </div>
   `;
-  return ('');
+  return('');
 });
