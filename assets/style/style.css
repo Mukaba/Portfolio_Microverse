@@ -4,6 +4,7 @@
   margin: 0;
   font-family: inherit;
   resize: none;
+  text-decoration: none;
 }
 
 html {
@@ -28,6 +29,7 @@ body {
 
 .flex {
   display: flex;
+  align-items: center;
 }
 
 .justify-between {
@@ -90,6 +92,72 @@ body {
   margin-bottom: 5rem;
   padding-top: 6rem;
   border-bottom-left-radius: 5rem;
+}
+
+#humberger {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  right: -100%;
+  background: hsla(234, 100%, 69%, 90%);
+  backdrop-filter: blur(100em);
+  -webkit-backdrop-filter: blur(100em);
+  mix-blend-mode: multiply;
+  padding: 2rem 2rem 0.6rem 2rem;
+  gap: 3rem;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+#humberger.active {
+  right: 0;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+#humbergerClose {
+  height: 30px;
+  width: 30px;
+  align-self: end;
+}
+
+#humbergerClose img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#humbergerList {
+  list-style: none;
+  gap: 2rem;
+  align-self: start;
+  align-items: start;
+}
+
+.black__line {
+  width: 50%;
+  height: 5px;
+  flex-grow: 1;
+  border-radius: 7px;
+}
+
+.black_line {
+  width: 100%;
+  height: 5px;
+  background-color: #0d151e;
+  border-radius: 7px;
+  align-self: end;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.humberger__li a {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
 }
 
 .eclips__dots {
@@ -251,7 +319,8 @@ body {
 
 .about__me {
   width: 100%;
-  height: fit-content;
+
+  /* height: fit-content; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -478,7 +547,8 @@ body {
 
 .languages_title {
   display: flex;
-  height: fit-content;
+
+  /* height: fit-content; */
   justify-content: space-between;
   padding: 10px;
 }
