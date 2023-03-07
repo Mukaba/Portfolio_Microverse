@@ -95,7 +95,7 @@ To get a local copy of this project and running, follow these steps.
 
 All contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Mukaba/Portfolio_Microverse).
+Feel free to check the [issues page](https://github.com/Mukaba/Portfolio_Microverse/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
