@@ -424,9 +424,9 @@ a {
   background-color: #fff;
   border: 1.2px solid #dfe1e6;
   border-radius: 16px;
-  height: 552px;
   padding: 16px;
   gap: 15px;
+  overflow: hidden;
 }
 
 .project__popup .works__item {
@@ -1102,7 +1102,6 @@ a {
   .ttt .project__description {
     width: 60%;
     color: #344563;
-
   }
 
   .see__project_btn {
