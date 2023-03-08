@@ -141,3 +141,28 @@ showMore.forEach((btn, index) => {
     });
   });
 });
+
+// form validation
+
+const capLow = (str) => {
+  const lowerCase = str.toString().toLowerCase();
+  if (str === lowerCase) {
+    return true;
+  }
+  return false;
+};
+const validation = (email) => {
+  email.preventDefault();
+  const mailValue = document.getElementById('email').value;
+  const form = document.getElementById('contactForm');
+  const result = capLow(mailValue);
+  if (result === true) {
+    form.action = 'https://formspree.io/f/xgebklbg';
+    form.submit();
+  } else {
+    const throughError = document.getElementById('errorMsg');
+    throughError.innerHTML = '<i>The email provided is invalid !</i>';
+  }
+};
+const form = document.getElementById('contactForm');
+form.addEventListener('submit', validation);

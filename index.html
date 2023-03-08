@@ -129,7 +129,7 @@
         <h2 class="contact__title">Contact me</h2>
         <p class="contact__paragraph">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
     </div>
-    <form action="https://formspree.io/f/xgebklbg" method="post" class="form__list">
+    <form action="https://formspree.io/f/xgebklbg" method="post" class="form__list" id="contactForm">
         <ul class="form__list__ul">
             <li>
                 <label for="name"></label>
@@ -143,7 +143,7 @@
                 <textarea class="input__li input__message" name="message" id="message" maxlength="500" placeholder="Write your message here" required></textarea>
             </li>
             <li class="">
-                <small class="errorMsg"></small>
+                <small id="errorMsg"></small>
                 <button class="submit__form" type="submit">Get in touch</button>
             </li>
         </ul>
