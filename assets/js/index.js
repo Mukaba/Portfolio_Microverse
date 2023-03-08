@@ -21,8 +21,8 @@ const cardArray = [
     featured_image: './assets/img/card_tonic.svg',
     technologies: ['html', 'css', 'javaScript'],
     see_project: 'See Project',
-    link_to_live_version: 'See live',
-    link_to_source: 'See source',
+    link_to_live_version: 'https://mukaba.github.io/Portfolio_Microverse/',
+    link_to_source: 'https://github.com/Mukaba/Portfolio_Microverse',
   },
   {
     name: 'Multi-Post Stories',
@@ -30,8 +30,8 @@ const cardArray = [
     featured_image: './assets/img/card_tonic2.svg',
     technologies: ['html', 'css', 'javaScript'],
     see_project: 'See Project',
-    link_to_live_version: 'Go live',
-    link_to_source: 'See source code',
+    link_to_live_version: 'https://mukaba.github.io/Portfolio_Microverse/',
+    link_to_source: 'https://github.com/Mukaba/Portfolio_Microverse',
   },
   {
     name: 'Tonic',
@@ -39,8 +39,8 @@ const cardArray = [
     featured_image: './assets/img/card_multi.svg',
     technologies: ['html', 'css', 'javaScript'],
     see_project: 'See Project',
-    link_to_live_version: 'Go live',
-    link_to_source: 'See source code',
+    link_to_live_version: 'https://mukaba.github.io/Portfolio_Microverse/',
+    link_to_source: 'https://github.com/Mukaba/Portfolio_Microverse',
   },
   {
     name: 'Multi-Post Stories',
@@ -48,13 +48,25 @@ const cardArray = [
     featured_image: './assets/img/card_multi2.svg',
     technologies: ['html', 'css', 'javaScript'],
     see_project: 'See Project',
-    link_to_live_version: 'Go live',
-    link_to_source: 'See source code',
+    link_to_live_version: 'https://mukaba.github.io/Portfolio_Microverse/',
+    link_to_source: 'https://github.com/Mukaba/Portfolio_Microverse',
   },
 ];
+  //live + source button
+  function createDiv(buttonId) {
+  const liveSiteBtn = document.createElement('a');
+  const sourceBtn = document.createElement('a');
+  liveSiteBtn.textContent = 'See Live';
+  liveSiteBtn.href = `${projects[buttonId].link_to_live_version}`;
+  sourceBtn.textContent = 'See Source';
+  sourceBtn.href = `${projects[buttonId].link_to_source}`;
+  liveSiteBtn.classList.add('popup-btn');
+  sourceBtn.classList.add('popup-btn');
+  }
 
-const cardsCont = document.getElementById('myWorks');
-cardArray.map((card) => {
+// card section
+  const cardsCont = document.getElementById('myWorks');
+  cardArray.map((card) => {
   cardsCont.innerHTML += `
       <div class="works__item tonic__project">
         <div class="tonic__header header__container">
@@ -119,11 +131,11 @@ showMore.forEach((btn, index) => {
                     </ul>
                     <hr class="grow">
                     <div class="see__project_btn flex">
-                        <button class="see__project flex">
-                            <span class="block">${cardArray[index].link_to_live_version}</span>
+                        <button class="see__project popup-btn flex">
+                            <span class="block ">${cardArray[index].link_to_live_version}</span>
                             <span class="block goLive"></span>
                         </button>
-                        <button class="see__project flex">
+                        <button class="see__project popup-btn flex">
                             <span class="block">${cardArray[index].link_to_source}</span>
                             <span class="block seeCode"></span>
                         </button>
