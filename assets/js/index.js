@@ -21,8 +21,8 @@ const cardArray = [
     featured_image: './assets/img/card_tonic.svg',
     technologies: ['html', 'css', 'javaScript'],
     see_project: 'See Project',
-    link_to_live_version: 'https://mukaba.github.io/Portfolio_Microverse/',
-    link_to_source: 'https://github.com/Mukaba/Portfolio_Microverse',
+    link_to_live_version: '<a target="_blank" href="https://mukaba.github.io/Portfolio_Microverse/">Go live</a>',
+    link_to_source: '<a target="_blank" href="https://github.com/Mukaba/Portfolio_Microverse">See source</a>',
   },
   {
     name: 'Multi-Post Stories',
@@ -30,8 +30,8 @@ const cardArray = [
     featured_image: './assets/img/card_tonic2.svg',
     technologies: ['html', 'css', 'javaScript'],
     see_project: 'See Project',
-    link_to_live_version: 'https://mukaba.github.io/Portfolio_Microverse/',
-    link_to_source: 'https://github.com/Mukaba/Portfolio_Microverse',
+    link_to_live_version: '<a target="_blank" href="https://mukaba.github.io/Portfolio_Microverse/">Go live</a>',
+    link_to_source: '<a target="_blank" href="https://github.com/Mukaba/Portfolio_Microverse">See source</a>',
   },
   {
     name: 'Tonic',
@@ -39,8 +39,8 @@ const cardArray = [
     featured_image: './assets/img/card_multi.svg',
     technologies: ['html', 'css', 'javaScript'],
     see_project: 'See Project',
-    link_to_live_version: 'https://mukaba.github.io/Portfolio_Microverse/',
-    link_to_source: 'https://github.com/Mukaba/Portfolio_Microverse',
+    link_to_live_version: '<a target="_blank" href="https://mukaba.github.io/Portfolio_Microverse/">Go live</a>',
+    link_to_source: '<a target="_blank" href="https://github.com/Mukaba/Portfolio_Microverse">See source</a>',
   },
   {
     name: 'Multi-Post Stories',
@@ -48,25 +48,14 @@ const cardArray = [
     featured_image: './assets/img/card_multi2.svg',
     technologies: ['html', 'css', 'javaScript'],
     see_project: 'See Project',
-    link_to_live_version: 'https://mukaba.github.io/Portfolio_Microverse/',
-    link_to_source: 'https://github.com/Mukaba/Portfolio_Microverse',
+    link_to_live_version: '<a target="_blank" href="https://mukaba.github.io/Portfolio_Microverse/">Go live</a>',
+    link_to_source: '<a target="_blank" href="https://github.com/Mukaba/Portfolio_Microverse">See source</a>',
   },
 ];
-  //live + source button
-  function createDiv(buttonId) {
-  const liveSiteBtn = document.createElement('a');
-  const sourceBtn = document.createElement('a');
-  liveSiteBtn.textContent = 'See Live';
-  liveSiteBtn.href = `${projects[buttonId].link_to_live_version}`;
-  sourceBtn.textContent = 'See Source';
-  sourceBtn.href = `${projects[buttonId].link_to_source}`;
-  liveSiteBtn.classList.add('popup-btn');
-  sourceBtn.classList.add('popup-btn');
-  }
 
 // card section
-  const cardsCont = document.getElementById('myWorks');
-  cardArray.map((card) => {
+const cardsCont = document.getElementById('myWorks');
+cardArray.map((card) => {
   cardsCont.innerHTML += `
       <div class="works__item tonic__project">
         <div class="tonic__header header__container">
