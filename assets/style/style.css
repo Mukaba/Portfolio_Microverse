@@ -403,6 +403,10 @@ a {
   background: no-repeat center url(../icons/peace.svg);
 }
 
+.about_paragraph {
+  color: #344563;
+}
+
 /* Works session */
 .works {
   display: grid;
@@ -1097,6 +1101,8 @@ a {
 
   .ttt .project__description {
     width: 60%;
+    color: #344563;
+
   }
 
   .see__project_btn {
