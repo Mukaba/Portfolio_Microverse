@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/style.css">
-    <script src="./assets/js/index.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -27,6 +26,9 @@
             <li class="humberger__li"><a href="#aboutMySelf" onclick="closemenu()">About</a></li>
             <li class="humberger__li"><a href="#contactMe" onclick="closemenu()">Contact</a></li>
         </ul>
+        <div class="black__line flex">
+            <div class="black_line"></div>
+        </div>
     </div>
   </header>
   <section class="about__me-container flex justify-center" id="aboutMeSection">
@@ -61,96 +63,11 @@
     </div>
   </section>
   <section class="works" id="myWorks">
-    <div class="works__item tonic__project">
-        <div class="tonic__header header__container"><div></div></div>
-        <div class="tonic__details">
-            <h3 class="project__title">Tonic</h3>
-        <div class="project__tags">
-            <p>CANOPY</p>
-            <div class="project__tags-boulet gray_color"></div>
-            <div class="gray_color">Back End Dev</div>
-            <div class="project__tags-boulet gray_color"></div>
-            <div class="gray_color">2015</div>
-        </div>
-        <p class="project__description">
-            A daily selection of privately personalized reads; no accounts or sign-ups required.
-        </p>
-        <ul class="project__languages">
-            <li>html</li>
-            <li>css</li>
-            <li>javaScript</li>
-        </ul>
-        <button class="see__project">See Project</button>
-        </div>
-    </div>
-    <div class="works__item multiPost__project">
-        <div class="multi__header header__container order__last"><div></div></div>
-        <div class="tonic__details">
-            <h3 class="project__title">Multi-Post Stories</h3>
-        <div class="project__tags">
-            <p>CANOPY</p>
-            <div class="project__tags-boulet gray_color"></div>
-            <div class="gray_color">Back End Dev</div>
-            <div class="project__tags-boulet gray_color"></div>
-            <div class="gray_color">2015</div>
-        </div>
-        <p class="project__description">
-            A daily selection of privately personalized reads; no accounts or sign-ups required.
-        </p>
-        <ul class="project__languages">
-            <li>html</li>
-            <li>css</li>
-            <li>javaScript</li>
-        </ul>
-        <button class="see__project">See Project</button>
-        </div>
-    </div>
-    <div class="works__item tonic2__project">
-        <div class="tonic2__header header__container"><div></div></div>
-        <div class="tonic__details">
-            <h3 class="project__title">Tonic</h3>
-        <div class="project__tags">
-            <p>CANOPY</p>
-            <div class="project__tags-boulet gray_color"></div>
-            <div class="gray_color">Back End Dev</div>
-            <div class="project__tags-boulet gray_color"></div>
-            <div class="gray_color">2015</div>
-        </div>
-        <p class="project__description">
-            A daily selection of privately personalized reads; no accounts or sign-ups required.
-        </p>
-        <ul class="project__languages">
-            <li>html</li>
-            <li>css</li>
-            <li>javaScript</li>
-        </ul>
-        <button class="see__project">See Project</button>
-        </div>
-    </div>
-    <div class="works__item multiPost2__project">
-        <div class="multi2__header header__container order__last"><div></div></div>
-        <div class="tonic__details">
-            <h3 class="project__title">Multi-Post Stories</h3>
-        <div class="project__tags">
-            <p>CANOPY</p>
-            <div class="project__tags-boulet gray_color"></div>
-            <div class="gray_color">Back End Dev</div>
-            <div class="project__tags-boulet gray_color"></div>
-            <div class="gray_color">2015</div>
-        </div>
-        <p class="project__description">
-            A daily selection of privately personalized reads; no accounts or sign-ups required.
-        </p>
-        <ul class="project__languages">
-            <li>html</li>
-            <li>css</li>
-            <li>javaScript</li>
-        </ul>
-        <button class="see__project">See Project</button>
-        </div>
-    </div>    
+
   </section>
   <section class="about__mySelf" id="aboutMySelf">
+    <div class="see__project_popup" id="seemorepopup">
+    </div>
     <div class="about__div1">
         <h2 class="mySelf__title">About <br> Myself</h2>
     <p class="about_paragraph">
@@ -232,5 +149,7 @@
         </ul>
     </form>
   </section>
+
+  <script src="./assets/js/index.js"></script>
 </body>
 </html>

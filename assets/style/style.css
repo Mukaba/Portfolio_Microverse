@@ -32,6 +32,10 @@ body {
   align-items: center;
 }
 
+.block {
+  display: block;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -96,6 +100,7 @@ body {
 
 #humberger {
   position: fixed;
+  z-index: 99;
   top: 0;
   bottom: 0;
   width: 100%;
@@ -120,6 +125,15 @@ body {
   height: 30px;
   width: 30px;
   align-self: end;
+}
+
+.header__container img,
+.header__container2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: 1s ease-in;
 }
 
 #humbergerClose img {
@@ -152,6 +166,10 @@ body {
 
 .hidden {
   visibility: hidden;
+}
+
+a {
+  color: inherit;
 }
 
 .humberger__li a {
@@ -385,6 +403,10 @@ body {
   background: no-repeat center url(../icons/peace.svg);
 }
 
+.about_paragraph {
+  color: #344563;
+}
+
 /* Works session */
 .works {
   display: grid;
@@ -402,8 +424,15 @@ body {
   background-color: #fff;
   border: 1.2px solid #dfe1e6;
   border-radius: 16px;
-  height: 552px;
   padding: 16px;
+  gap: 15px;
+  overflow: hidden;
+}
+
+.project__popup .works__item {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
   gap: 15px;
 }
 
@@ -413,35 +442,79 @@ body {
   gap: 15px;
 }
 
-.header__container {
+.header__container,
+.header__container2 {
   height: 100%;
   width: 100%;
   border-radius: 8px;
   overflow: hidden;
 }
 
-.header__container div {
-  height: 100%;
+.see__project_popup {
+  display: none;
+  transition: all 0.5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.act {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__popup {
+  width: 90%;
+  height: 90%;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  overflow: scroll;
+  padding: 1rem;
+}
+
+.works__item .card__head {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item__title {
+  justify-content: space-between;
+}
+
+.closePopup {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  align-self: start;
+  background: center no-repeat url(../icons/cross.svg);
+}
+
+.see__project_btn {
+  justify-content: space-between;
   width: 100%;
-  background-size: cover !important;
-  border-radius: 8px;
-  transition: 1s ease-in;
 }
 
-.tonic__header div {
-  background: no-repeat center url(../img/card_tonic.svg);
+.goLive,
+.seeCode {
+  margin-left: 0.6rem;
+  height: 20px;
+  width: 20px;
 }
 
-.tonic2__header div {
-  background: no-repeat center url(../img/card_tonic2.svg);
+.goLive {
+  background: center no-repeat url(../icons/golive.svg);
 }
 
-.multi__header div {
-  background: no-repeat center url(../img/card_multi.svg);
-}
-
-.multi2__header div {
-  background: no-repeat center url(../img/card_multi2.svg);
+.seeCode {
+  background: center no-repeat url(../icons/seecode.svg);
 }
 
 .project__title {
@@ -820,16 +893,16 @@ body {
   /* ----works session */
 
   .works > .works__item {
-    width: 80%;
+    /* width: 100%; */
     margin: auto;
     flex-direction: row;
     height: 496px;
-    transition: 200ms ease-in-out;
+    transition: 150ms ease-in-out;
   }
 
   .works > .works__item:hover {
     filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
-    transition: 300ms ease-in-out;
+    transition: 150ms ease-in-out;
   }
 
   .order__last {
@@ -992,7 +1065,12 @@ body {
     transition: 0.2s ease-out;
   }
 
-  .header__container div:hover {
+  .header__container2 img {
+    height: 50vh;
+  }
+
+  .header__container img:hover,
+  .header__container2 img:hover {
     transition: 1s ease-out;
     transform: scale(1.5);
   }
@@ -1004,5 +1082,39 @@ body {
   .nav__li:hover a {
     color: #6070fe;
     font-weight: 500;
+  }
+
+  /* cards popups */
+
+  .project__popup {
+    overflow: hidden;
+  }
+
+  .ttt {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .ttt .tonic__details {
+    width: 40%;
+  }
+
+  .ttt .project__description {
+    width: 60%;
+    color: #344563;
+  }
+
+  .see__project_btn {
+    justify-content: start;
+    gap: 1rem;
+  }
+
+  .see__project_btn button {
+    padding: 0.4rem 1rem;
+  }
+
+  .tonic__details hr {
+    flex-grow: 0;
+    border: 1px solid #ebecf0;
   }
 }
