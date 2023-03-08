@@ -752,6 +752,10 @@ a {
   width: 142px;
 }
 
+#errorMsg {
+  color: red;
+}
+
 .input__message {
   height: 8rem;
   padding: 10px;
