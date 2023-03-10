@@ -135,7 +135,7 @@ showMore.forEach((btn, index) => {
     </div>
 </div>
 `;
-    const popClose = document.querySelector('.closePopup');
+    const popClos = document.querySelector('.closePopup');
     popClose.addEventListener('click', () => {
       pop.classList.remove('act');
     });
